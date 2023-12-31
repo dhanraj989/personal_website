@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dhanraj Malla</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .main {
+            margin: 5px;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .footer {
+            padding: 10px;
+            text-align: center;
+            background: #ddd;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 16px;
+        }
+        .profile-pic {
+            position: absolute;
+            top: 0px;
+            left: 8px;
+            width: 108px;
+            height: 108px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="https://drive.google.com/uc?export=view&id=1okyTXU_pU0hyukNNA0-8ogzY6dMdjJKn" alt="Profile Picture" class="profile-pic">
+  <h1>Malla Dhanraj</h1>
+</div>
+
+<div class="navbar">
+  <a href="#about">About</a>
+  <a href="#portfolio">Internships and Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+
+  <h2 id="about">About Me</h2>
+  <p> Hello there! Myself Dhanraj, a fourth-year undergraduate student from the Department of Industrial and Systems Engineering at the Indian Institute of Technology Kharagpur. I am a Data Science enthusiast who enjoys studying and analyzing data to gain insights. I've worked with Python, C++, HTML, CSS, and R; libraries like Scikit-learn, TensorFlow, PyTorch, Selenium, Flask, Seaborn, Matplotlib, Pandas, and Numpy; and software like Anaconda, Jupyter, Visual Studio Code, R studio, and Github. I earned the title of Kaggle Expert by gaining 6 Bronze medals and ranked among the top 1% out of 2.8 lakh kagglers. </p>
+
+  <h2 id="portfolio">My Internships and Projects</h2>
+  <p>
+  <section>
+        <h3>Image Denoising of Handwritten Devanagari Script Images (Bachelor Thesis Project)</h3>
+        <p><strong>Duration:</strong> Aug 2023 - Nov 2023</p>
+        <p><strong>Institution:</strong> Indian Institute of Technology, Kharagpur</p>
+        <p><strong>Supervisor:</strong> Professor BG Menon, Industrial and Systems Engineering Department, IIT Kharagpur</p>
+        <p><strong>Objective:</strong> The primary aim of this research is to develop and evaluate image-denoising algorithms that can effectively reduce noise in handwritten Devanagari script images.</p>
+        <ul>
+            <li>Created a denoising dataset utilizing IIIT-HW-Dev Dataset for ground truth images and generated corresponding noise images by adding Gaussian, Salt and Pepper, Poisson, and Speckle noises</li>
+            <li>Trained PRIDNet, RIDNet, Boosted Residual Dense UNet, and Pix2Pix GAN models on a smaller denoising dataset made by combining two datasets, SIDD and RENOIR</li>
+            <li>Took 2 architectures that performed well on the smaller dataset; fine-tuned them on the created denoising dataset, also trained both architectures from scratch on the denoising dataset created</li>
+            <li>Obtained an impressive Peak Signal to Noise Ratio (PSNR) of about 38dB for the best architecture on the test dataset</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Machine Learning Research Intern | Foreign Training Program | Stanford University</h3>
+        <p><strong>Duration:</strong> May 2023 - August 2023</p>
+        <p><strong>Objective:</strong> Applying machine learning techniques in geotagged data sources to monitor health in low-income and middle-income countries</p>
+        <ul>
+            <li>Implemented 6 robust machine learning models trained with 100000 data points to predict 6 health indicators using AutoML from the FLAML library</li>
+            <li>Acquired an excellent mean column-wise RMSE score of 11.39 for the test dataset and positioned among the top teams in the project</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Object Localization with TensorFlow | Coursera Project Network</h3>
+        <p><strong>Duration:</strong> July 2023</p>
+        <p><strong>Objective:</strong> Developing and training a deep learning model to perform object localization on nine different classes of emoji images using TensorFlow</p>
+        <ul>
+            <li>Crafted a Convolutional Neural Network model with 2 output-dense layers, one tuned to classify emoji and the other to predict bounding box</li>
+            <li>Attained a perfect accuracy of 100% on the classification task and an extremely remarkable Intersection over Union(IoU) score of 0.765 during model testing</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Coding Questions Search Engine | Self Project</h3>
+        <p><strong>Duration:</strong> May 2023 - June 2023</p>
+        <p><strong>Objective:</strong> Designing and enhancing a search engine to automatically return question links from LeetCode based on user queries</p>
+        <ul>
+            <li>Scraped 1500 question links and their corresponding text data from the LeetCode website by using the Selenium library and Chrome web driver</li>
+            <li>Designed a query searcher that returns LeetCode question links with the help of the TF-IDF algorithm, then connected front-end and back-end with Flask and deployed the website with Render.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Quality Monitoring of Mangoes | Course Project | Information Systems Project Course</h3>
+        <p><strong>Duration:</strong> Jan 2023 - April 2023</p>
+        <p><strong>Instructor:</strong> Professor Mamata Jenamani, Industrial and Systems Engineering Department, IIT Kharagpur</p>
+        <p><strong>Objective:</strong> Building a model using image processing and machine learning techniques to automate the process of mango quality monitoring</p>
+        <ul>
+            <li> Performed foreground extraction on 600 images to remove background from them using 2 methods (Image segmentation and K-means clustering)</li>
+            <li> Executed Random Forest and MultiClass Support Vector Machines Classifiers to assess the quality of mangoes using 6 distinct classification strategies</li>
+            <li> Showcased an attractive F1-score above 0.93 in all 6 strategies for Random Forest and above 0.95 F1-score in all 6 methods for Multiclass Support Vector Machine</li>
+        </ul>
+    </section>
+
+</p>
+
+  <h2 id="contact">Contact Me</h2>
+  <p>Feel free to reach out via <a href="mailto:dhanrajmalla169@gmail.com">dhanrajmalla169@gmail.com</a>.</p>
+</div>
+
+</body>
+</html>
