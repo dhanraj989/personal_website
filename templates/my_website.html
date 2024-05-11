@@ -51,8 +51,23 @@
             width: 108px;
             height: 108px;
         }
-
+        .hidden {
+            display: none;
+        }
     </style>
+    <script>
+        window.onload = function() {
+            document.querySelector('.navbar a[href="#portfolio"]').addEventListener('click', function(e) {
+                e.preventDefault();
+                var content = document.querySelector('.main');
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                } else {
+                    content.classList.add('hidden');
+                }
+            });
+        };
+    </script>
 </head>
 <body>
 
