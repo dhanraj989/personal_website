@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Dhanraj Malla</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: #a39274;
+
+            height: 100vh;
+
+            margin: 0;
+
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+
+            color: #252523; /* Change the text color to match the background */
+
+        }
+
+        .header {
+
+            text-align: center;
+
+            padding: 10px;
+
+            color: #252523; /* Change the header text color to white for better contrast */
+
+        }
+
+        .navbar {
+
+            overflow: hidden;
+
+            background-color: #252523; /* Change the navbar color to match the background */
+
+        }
+
+        .navbar a {
+
+            float: left;
+
+            display: block;
+
+            color: #dfd8c8; /* Change the navbar link color to white for better contrast */
+
+            text-align: center;
+
+            padding: 14px 16px;
+
+            text-decoration: none;
+
+        }
+
+        .navbar a:hover {
+
+            background-color: #dfd8c8; /* Change the navbar hover color to match the background */
+
+            color: #252523;
+
+        }
+
+        .main {
+
+            margin: 5px;
+
+            padding: 20px;
+
+            background-color: #a39274
+
+            color: #252523; /* Change the main content text color to match the background */
+
+        }
+
+        .footer {
+
+            padding: 10px;
+
+            text-align: center;
+
+            background: #ddd;
+
+        }
+
+        li {
+
+            font-size: 16px;
+
+        }
+
+        .profile-pic {
+
+            position: absolute;
+
+            top: 0px;
+
+            left: 8px;
+
+            width: 108px;
+
+            height: 108px;
+
+        }
+
+        .hidden {
+
+            display: none;
+
+        }
+
+    </style>
+
+    <script>
+
+        window.onload = function() {
+
+            // Hide the content by default
+
+            var portfolioContent = document.querySelector('#portfolio').parentNode;
+
+            var contactContent = document.querySelector('#contact').parentNode;
+
+            var aboutcontent = document.querySelector('#about').parentNode;
+
+            var pubcontent = document.querySelector('#Publications').parentNode;
+
+            portfolioContent.classList.add('hidden');
+
+            contactContent.classList.add('hidden');
+
+            aboutcontent.classList.add('hidden');
+
+            pubcontent.classList.add('hidden');
+
+            document.querySelector('.navbar a[href="#portfolio"]').addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+                contactContent.classList.add('hidden');
+
+                aboutcontent.classList.add('hidden');
+
+                pubcontent.classList.add('hidden');               
+
+                if (portfolioContent.classList.contains('hidden')) {
+
+                    portfolioContent.classList.remove('hidden');
+
+                }
+
+            });
+
+
+
+            document.querySelector('.navbar a[href="#contact"]').addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+                portfolioContent.classList.add('hidden');
+
+                aboutcontent.classList.add('hidden');
+
+                pubcontent.classList.add('hidden');
+
+                if (contactContent.classList.contains('hidden')) {
+
+                    contactContent.classList.remove('hidden');
+
+                }
+
+            });
+
+            document.querySelector('.navbar a[href="#about"]').addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+                contactContent.classList.add('hidden');
+
+                portfolioContent.classList.add('hidden');
+
+                pubcontent.classList.add('hidden');
+
+                if (aboutcontent.classList.contains('hidden')) {
+
+                    aboutcontent.classList.remove('hidden');
+
+                }
+
+            });
+
+            document.querySelector('.navbar a[href="#Publications"]').addEventListener('click', function(e) {
+
+                e.preventDefault();
+
+                contactContent.classList.add('hidden');
+
+                portfolioContent.classList.add('hidden');
+
+                aboutcontent.classList.add('hidden');
+
+                if (pubcontent.classList.contains('hidden')) {
+
+                    pubcontent.classList.remove('hidden');
+
+                }
+
+            });
+
+        };
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+<div class="header">
+
+  <h1>Malla Dhanraj</h1>
+
+</div>
+
+
+
+<div class="navbar">
+
+  <a href="#about">About</a>
+
+  <a href="#portfolio">Internships and Projects</a>
+
+  <a href="#Publications"> Publications</a>
+
+  <a href="#contact">Contact</a>
+
+</div>
+
+
+
+<div class="main">
+
+<div id = "aboutcontent" class = "main">
+
+  <h2 id="about">About Me</h2>
+
+  <p> 
+
+Hello there! Myself Dhanraj, a fifth-year dual degree student from the Department of Industrial and Systems Engineering at the Indian Institute of Technology Kharagpur. I am a Data Science enthusiast who enjoys studying and analyzing data to gain insights. I've worked with Python, C++, HTML, CSS, and R; libraries like Scikit-learn, TensorFlow, PyTorch, Selenium, Flask, Seaborn, Matplotlib, Pandas, and Numpy; and software like Anaconda, Jupyter, Visual Studio Code, R studio, and Github. I earned the title of Kaggle Expert by gaining 6 Bronze medals.
+
+ </p>
+
+</div>
+
+<div id="portfolio-content" class="main">  
+
+<h2 id="portfolio">My Internships and Projects</h2>
+
+  <p>
+
+  <ul>
+
+        <li><h3>Data Science Summer Intern</h3>
+
+        <p><strong>Duration:</strong> May 2024 - Jul 2024</p>
+
+        <p><strong>Institution:</strong> JM Financial Ltd. </p>
+
+        <p><strong>Objective:</strong> Developing systems to cluster non-renewal customers using call recordings and to provide personalized stock recommendations for customer
+
+        <ul>
+
+            <li>Separated customer voice from 170+ recordings, removed noise with SileroVAD, and performed Automatic Speech Recognition with Faster-Whisper</li>
+
+            <li>Extracted non-renewal reasons from 170+ transcripts with Llama-3, tokenized them with spaCy, and used hierarchical clustering to group customers</li>
+
+            <li>Obtained WCSS score of 1912.26, CH Index of 15.48 for clustering customers, developed a recommender model to provide personalized stock insights</li>
+
+        </ul></li>  
+
+        <li><h3>Computer Vision Intern</h3>
+
+        <p><strong>Duration:</strong> Mar 2024 - May 2024</p>
+
+        <p><strong>Institution:</strong> Indian School of Business Hyderabad </p>
+
+        <p><strong>Objective:</strong> Creating 2 systems to detect continuous point positions on tree trunk and to draw borders for tree trunk in videos using computer vision</p>
+
+        <ul>
+
+            <li>Worked on 300 videos, built a model to draw borders using PCA for orientation, boundary detection, and integrated SAM for semantic segmentation</li>
+
+            <li>Utilized optical flow algorithm and developed a system to detect continous point positions in the videos; published a PyPI library containing 2 models</li>
+
+        </ul></li>
+
+        <li><h3>Image Captioning using Deep Learning</h3>
+
+        <p><strong>Duration:</strong> Jan 2024 - April 2024</p>
+
+        <p><strong>Institution:</strong> Indian Institute of Technology, Kharagpur</p>
+
+        <p><strong>Objective:</strong> Developing 2 encoder-decoder based deep learning models for Automatic Image Captioning using CNNs, LSTMs and Vision Transformers</p>
+
+        <ul>
+
+            <li>Preprocessed 7500+ images and text data, designed 2 models using ResNet50 and Vision Transformer (ViT) as encoders and LSTM as decoders</li>
+
+            <li>Achieved BLEU score of 0.227, ROUGE-L score of 0.209 with ResNet50 and BLEU score of 0.233, ROUGE-L score of 0.211 with Vision Transformer</li>
+
+        </ul></li>
+
+        <li><h3>Forecasting Particulate Matter 2.5 Concentration in Delhi and Mumbai</h3>
+
+        <p><strong>Duration:</strong> Jan 2024 - April 2024</p>
+
+        <p><strong>Institution:</strong> Indian Institute of Technology, Kharagpur</p>
+
+        <p><strong>Objective:</strong> This study seeks to compare and analyze the PM2.5 levels in Delhi and Mumbai cities, identify patterns and trends, and predict future PM2.5 concentrations using both univariate and multivariate time series models</p>
+
+        <ul>
+
+            <li>Developed SARIMA, Prophet, LSTM, 1D CNN univariate time series model and LSTM with fully connected layer, 1D CNN with fully connected layer multivariate models</li>
+
+            <li>Acheived Mean Absolute Error of 5.25 for Kolkata Hourly Dataset, 9.37 for Kolkata Daily Dataset, 12.32 for Delhi Hourly Dataset and 8.40 for Delhi Daily Dataset</li>
+
+        </ul></li>
+
+        <li><h3>Research Internship</h3>
+
+        <p><strong>Duration:</strong> Dec 2023 - Jan 2024</p>
+
+        <p><strong>Institution:</strong> Indian Institute of Management Mumbai</p>
+
+        <ul>
+
+            <li>Worked on a project related to attaining causal inference using data-mined variables, introduced an extra step to a recent framework named ForestIV by tuning the hyperparameters of the random forest model to tackle biases </li>
+
+            <li>Utilized the Optuna framework for fine-tuning the hyperparameters of the random forest model. Obtained an excellent Root Mean Squared Error of 0.121 showcasing the robustness of the model.</li>
+
+        </ul></li>
+
+        <li><h3>Image Denoising of Handwritten Devanagari Script Images</h3>
+
+        <p><strong>Duration:</strong> Aug 2023 - Nov 2023</p>
+
+        <p><strong>Institution:</strong> Indian Institute of Technology, Kharagpur</p>
+
+        <p><strong>Objective:</strong> The primary aim of this research is to develop and evaluate image-denoising algorithms that can effectively reduce noise in handwritten Devanagari script images.</p>
+
+        <ul>
+
+            <li>Created a denoising dataset utilizing IIIT-HW-Dev Dataset for ground truth images and generated corresponding noise images by adding Gaussian, Salt and Pepper, Poisson, and Speckle noises</li>
+
+            <li>Trained PRIDNet, RIDNet, Boosted Residual Dense UNet, and Pix2Pix GAN models on a smaller denoising dataset made by combining two datasets, SIDD and RENOIR</li>
+
+            <li>Took 2 architectures that performed well on the smaller dataset; fine-tuned them on the created denoising dataset, also trained both architectures from scratch on the denoising dataset created</li>
+
+            <li>Obtained an impressive Peak Signal to Noise Ratio (PSNR) of about 38dB for the best architecture on the test dataset</li>
+
+        </ul></li>
+
+
+
+        <li><h3>Machine Learning Research Intern</h3>
+
+        <p><strong>Duration:</strong> May 2023 - August 2023</p>
+
+        <p><strong>Institution:</strong> Stanford University </p>
+
+        <p><strong>Objective:</strong> Applying machine learning techniques in geotagged data sources to monitor health in low-income and middle-income countries</p>
+
+        <ul>
+
+            <li>Implemented 6 robust machine learning models trained with 100000 data points to predict 6 health indicators using AutoML from the FLAML library</li>
+
+            <li>Acquired an excellent mean column-wise RMSE score of 11.39 for the test dataset and positioned among the top teams in the project</li>
+
+        </ul></li>
+
+
+
+        <li><h3>Object Localization with TensorFlow</h3>
+
+        <p><strong>Duration:</strong> July 2023</p>
+
+        <p><strong>Objective:</strong> Developing and training a deep learning model to perform object localization on nine different classes of emoji images using TensorFlow</p>
+
+        <ul>
+
+            <li>Crafted a Convolutional Neural Network model with 2 output-dense layers, one tuned to classify emoji and the other to predict bounding box</li>
+
+            <li>Attained a perfect accuracy of 100% on the classification task and an extremely remarkable Intersection over Union(IoU) score of 0.765 during model testing</li>
+
+        </ul></li>
+
+
+
+        <li><h3>Coding Questions Search Engine</h3>
+
+        <p><strong>Duration:</strong> May 2023 - June 2023</p>
+
+        <p><strong>Objective:</strong> Designing and enhancing a search engine to automatically return question links from LeetCode based on user queries</p>
+
+        <ul>
+
+            <li>Scraped 1500 question links and their corresponding text data from the LeetCode website by using the Selenium library and Chrome web driver</li>
+
+            <li>Designed a query searcher that returns LeetCode question links with the help of the TF-IDF algorithm, then connected front-end and back-end with Flask and deployed the website with Render.</li>
+
+        </ul></li>
+
+
+
+        <li><h3>Quality Monitoring of Mangoes</h3>
+
+        <p><strong>Duration:</strong> Jan 2023 - April 2023</p>
+
+        <p><strong>Institution:</strong> Indian Institute of Technology Kharagpur</p>
+
+        <p><strong>Objective:</strong> Building a model using image processing and machine learning techniques to automate the process of mango quality monitoring</p>
+
+        <ul>
+
+            <li> Performed foreground extraction on 600 images to remove background from them using 2 methods (Image segmentation and K-means clustering)</li>
+
+            <li> Executed Random Forest and MultiClass Support Vector Machines Classifiers to assess the quality of mangoes using 6 distinct classification strategies</li>
+
+            <li> Showcased an attractive F1-score above 0.93 in all 6 strategies for Random Forest and above 0.95 F1-score in all 6 methods for Multiclass Support Vector Machine</li>
+
+        </ul></li>
+
+
+
+</p>
+
+</div>
+
+<div id="Publications-content" class = "main">
+
+  <h2 id="Publications">Research Articles</h2>
+
+  <p>S. Bagchi, J. V. Aditya, S. Kumari, M. Dhanraj and M. Jenamani, "A Machine Learning-based Approach for Automatic Grading and Quality Inspection of Indian Mangoes," 2023 IEEE 2nd Industrial Electronics Society Annual On-Line Conference (ONCON), SC, USA, 2023, pp. 1-8, doi: 10.1109/ONCON60463.2023.10430932. keywords: {Computer vision;Visualization;Machine learning;Manuals;Inspection;Quality assessment;Tuning;Computer Vision System;Dark Patches detection;Image Processing;Local Binary Pattern (LBP);Machine Learning;Random Forest;SVM Classifier;Grading},<a href="https://ieeexplore.ieee.org/abstract/document/10430932">https://ieeexplore.ieee.org/abstract/document/10430932</a></p>
+
+</div>
+
+<div id="contact-content" class="main">
+
+  <h2 id="contact">Contact Me</h2>
+
+  <p>Feel free to reach out via: </p>
+
+  <p>mail: <a href="mailto:dhanrajmalla169@gmail.com">dhanrajmalla169@gmail.com</a>.</p>
+
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/dhanraj-malla-57b125232" target="_blank">Dhanraj Malla</a>.</p>
+
+</div>
+
+</div>
+
+
+
+</body>
+
+</html
